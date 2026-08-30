@@ -28,3 +28,31 @@ PRINT combinedString
 END
 */
 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    // Declare variables to store the user's input and combined string
+    string firstString;
+    string secondString;
+    string combinedString;
+
+    // Ask the user for the first string
+    cout << "Enter the first string: ";
+    getline(cin, firstString);
+
+    // Ask the user for the second string
+    cout << "Enter the second string: ";
+    getline(cin, secondString);
+
+    // Concatenate the two strings
+    combinedString = firstString + secondString;
+
+    // Display the resulting string
+    cout << "Concatenated string: " << combinedString << endl;
+
+    return 0;
+}
